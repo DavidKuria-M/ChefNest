@@ -3,81 +3,273 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>ChefNest</title>
 </head>
 <body>
-    <h1>CHEFNEST</h1>
-    <h3>Learn.Cook.Master.</h3>
 
-    <ul>
-        <l1>Home</l1>
-        <l1>Recipes</l1>
-        <li>Courses</li>
-        <l1>Chefs</l1>
-        <li>About</li>
-        <li>Login</li>
-    </ul>
+    <header class="header">
+         <div class="logo">
+            <h1>CHEFNEST</h1>
+        </div>
 
-    <h2>Welcome to ChefNest</h2>
-    <p>Learn to cook.One recipe at a time.</p>
-    <p>Discover recipes,follow cooking lessons and develop real cooking skills.</p>
-    <p>[Explore recipes]</p>
-    <p>Start Learning</p>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Recipes</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Chefs</a></li>
+                <li><a href="#">About</a></li>
+                <li class="login"><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h2>WHAT DO YOU WANT TO COOK?</h2>
-    <ol>
-        <li>Pasta</li>
-        <li>Chicken</li>
-        <li>Deserts</li>
-        <li>African</li>
-        <li>Healthy</li>
-        <li>Fast Food</li>
-    </ol>
+    <section class="hero-banner">
+        <div class="hero-content">
+          
+            <p class="tagline">LEARN. COOK. MASTER.</p>
+            
+            <h2>Welcome to ChefNest</h2>
+            <p class="hero-description">
+                Learn to cook.One recipe at a time.<br> 
+                Discover recipes,follow cooking lessons and develop real cooking skills.
 
-    <h2>FEATURED RECIPES</h2>
-    <ul>
-        <li><a href="./Chicken.html">Brazilian Chicken</a></li>
-        <li><a href="./Spaghetti.html">Spaghetti</a></li>
-        <li><a href="./Chocolate.html">Chocolate Cake</a></li>
-        <li><a href="./Curry.html">Curry</a></li>
-        <li><a href="./sausage.html">Sausage Balls</a></li>
-    </ul>
+            </p>
+           
 
-    <h2>LEARN FROM CHEFS</h2>
-    <p>Meet our cooking instructure</p>
-    <p><strong>Chef John</strong></p>
-    <p><strong>Chef Sarah</strong></p>
-    <p><strong>Chef David</strong></p>
+            <div class="hero-button">
+                <a href="#" class="btn-explore">Explore recipes</a>
+                <a href="#" class="btn-start">Start Learning</a>
+            </div>       
+        </div>
+    </section>
+    <section class="eat">
+        <h2>WHAT DO YOU WANT TO COOK?</h2>
+        <div class="food-list">
+            <ul>
+                <li>
+                    <a href="#">
+                        <div class="icon-circle yellow">
+                            <img src="./resources/pasta.svg" alt="Pasta">
+                        </div>
+                        <span>Pasta</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="icon-circle green">
+                            <img src="./resources/chicken.svg" alt="Chicken">
+                        </div>
+                        <span>Chicken</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="icon-circle pink">
+                            <img src="./resources/ice-cream.svg" alt="Deserts">
+                        </div>
+                        <span>Deserts</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="icon-circle yellow">
+                            <img src="./resources/africa.svg" alt="African">
+                        </div>
+                        <span>African</span>
+                    </a>
+                </li>
 
-    <h2>COOKING COURSES</h2>
-    <ol>
-        <li>Beginner Cooking</li>
-        <li>Baking Fundamentals</li>
-        <li>African Cuisine</li>
-        <li>Advanced Cooking</li>
-    </ol>
+                <li>
+                    <a href="#">
+                        <div class="icon-circle green">
+                            <img src="./resources/apple.svg" alt="Healthy">
+                        </div>
+                        <span>Healthy</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="icon-circle yellow">
+                            <img  src="./resources/fast-food.svg" alt="Fast food">
+                        </div>
+                        <span>Fast Food</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
 
-    <p><u>View All Courses</u></p>
+    <section class="featured">
+        
+        <h2>FEATURED RECIPES</h2>
 
-    <h2><strong>WHY CHEFNEST?</strong></h2>
+        <div class="recipe-grid">
 
-    <ul>
-        <li>Step-by-step recipes</li>
-        <li>Video Lessons</li>
-        <li>Professional Chefs</li>
-        <li>Cooking courses</li>
-        <li>Track your Progress</li>
-    </ul>
+            <div class="card">
+                <a href="./Chicken.html" class="recipe-card"> 
+                    <img src="https://images.unsplash.com/photo-1694579740719-0e601c5d2437?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Brazilian Chicken">
+                    <div class="recipe-info">
+                        <strong>Brazilian Chicken</strong>
+                        <span class="arrow">&rarr; </span>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="./Spaghetti.html" class="recipe-card">
+                    <img src="https://images.unsplash.com/photo-1692071097529-320eb2b32292?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Spaghetti">
+                    <div class="recipe-info">
+                        <strong>Spaghetti</strong>
+                        <span class="arrow">&rarr; </span>
+                    </div>
+                </a>
+            </div>
 
-    <h3>READY TO START?</h3>
-    <p>Start your cooking journey</p>
-    <p><u>[Get Started]</u></p>
+            <div class="card">
+                <a href="./Curry.html" class="recipe-card">
+                    <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Curry">
+                    <div class="recipe-info">
+                        <strong>Curry</strong>
+                        <span class="arrow">&rarr; </span>
+                    </div>
+                </a>
+            </div>
 
-    <ol>
-        <li>About</li>
-        <li>Contact</li>
-        <li>Privacy Policy</li>
-        <li>Terms of Service</li>
-    </ol>
+            <div class="card">
+                <a href="./Chocolate.html" class="recipe-card">
+                    <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Chocolate Cake">
+                    <div class="recipe-info">
+                        <strong>Chocolate Cake</strong>
+                        <span class="arrow">&rarr; </span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="./sausage.html" class="recipe-card">
+                    <img src="https://images.unsplash.com/photo-1593001874117-c99c800e3eb8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sausage balls">
+                    <div class="recipe-info">
+                        <strong>Sausage Balls</strong>
+                        <span class="arrow">&rarr; </span>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section  class="profiles">
+        <h2 class="section-title">LEARN FROM CHEFS</h2>
+        <p class="selection-subtitle">Meet our cooking instructure</p>
+        
+        <div class="chef-profile">
+            <div class="chef-card">
+                <img src="./resources/John.jpg" alt="Chef John">
+               <div class="chef-info">
+                    <h3>Chef John</h3>
+                    <p> Italian & Continental Cuisine.</p>
+               </div>
+
+            </div>
+            <div class="chef-card">
+                <img src="./resources/Sarah.jpg" alt="Chef Sarah">
+                <div class="chef-info">
+                    <h3>Chef Sarah</h3>
+                    <p> Baking & Deserts.</p>
+                </div>
+            </div>
+
+            <div class="chef-card">
+                <img src="./resources/David.jpg" alt="Chef David">
+                <div class="chef-info">
+                    <h3>Chef David</h3>
+                    <p>African & Local Cuisine</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="cooking-courses">
+        <div class="courses-content">
+            <h2>COOKING COURSES</h2>
+            
+            <ol class="courses-list">
+                <li>Beginner Cooking</li>
+                <li>Baking Fundamentals</li>
+                <li>African Cuisine</li>
+                <li>Advanced Cooking</li>
+            </ol>
+            
+            <div class="view">
+                <a href="#">View All Courses &rarr;</a>
+            </div>
+        </div>
+
+        <div class="cooking-image">
+            <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Chef Cooking">
+        </div>
+
+    </section>
+
+   <section class="why-chefnest-selection">
+        <div class="feature-block">
+            <h2 class="selection-title">WHY CHEFNEST?</h2>
+
+            <ul class="features-list">
+                <li>
+                    <img src="./resources/recipe-svgrepo-com.svg" alt="Recipes">
+                    <span>Step-by-step recipes</span>
+                </li>
+                <li>
+                   <img src="./resources/video-com.svg" alt="Video Lessons">
+                    <span>Video Lessons</span>
+                </li>
+
+                 <li>
+                    <img src="./resources/chef.svg" alt="Professional Chefs">
+                    <span>Professional Chefs</span>
+                </li>
+
+                 <li>
+                    <img src="./resources/graduation.svg" alt="Courses">
+                    <span>Cooking Courses</span>
+                </li>
+                
+                 <li>
+                    <img src="./resources/progress.svg" alt="Progress">
+                    <span>Track your Progress</span>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="cta-block">
+            <h3>READY TO START?</h3>
+            <p>Start your cooking journey</p>
+            <a href="#" class="btn-primary">Get Started &rarr;</a>
+        </div>
+
+   </section>
+
+   
+    <footer class="footer">
+        <div class="footer-logo">
+            <h1>CHEFNEST</h1>
+        </div>
+        <nav class="footbar">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </nav>
+    </footer>
+  
 </body>
 </html>
